@@ -72,7 +72,13 @@
           }
         };
   
+        function reWriteStats(){
+            console.log("Make: " + car.make);
+            console.log("Model: " + car.model);
+            console.log("Color: " + car.color);
+            console.log("Mileage: " + car.mileage);
 
+        }
         // Now we have to follow the instructions in the readme
 
         document.onkeyup = function(event){
@@ -88,6 +94,8 @@
 
             //  honk Function assigned to a key=
             if(event.key == 'h') car.honk();
+
+            reWriteStats();
 
         }
 
