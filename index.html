@@ -5,8 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Car Game</title>
+    <style>
+        h1,h2,h3{
+            text-align: center;
+            color: white;
+        }
+        body{
+            background-color: rgb(83, 79, 79);
+        }
+
+        img{
+            display: block;
+            margin: auto;
+            border: 3px blue;
+        }
+    </style>
 </head>
 <body>
+
+    <h1>Welcome to the Car object game</h1>
+
+    <h2>There are various functions for pressing certain keys</h2>
+
+    <h3> Press either w, a, h, or t !</h3>
+
+    <img src="https://www.wikihow.com/images/thumb/e/e3/Play-Punch-Buggy-Step-1-Version-2.jpg/aid1012218-v4-728px-Play-Punch-Buggy-Step-1-Version-2.jpg" alt="">
     
     <!-- First we pull the old code from the previous activity -->
     <script>
@@ -59,10 +82,13 @@
 
             // driveAroundWorld Function assigned to a key
             if(event.key == 'a') car.driveAroundWorld();
-            
+
             //  getTuneUp Function assigned to a key
+            if(event.key == 't') car.getTuneUp();
 
             //  honk Function assigned to a key=
+            if(event.key == 'h') car.honk();
+
         }
 
 
